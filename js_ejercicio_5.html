@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 5 - Calculadora sencilla</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/js_ejercicio_5.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <a class="back-link" href="index.html">Volver al indice</a>
+
+    <section class="card">
+      <p class="eyebrow">Ejercicio 5</p>
+      <h1>Calculadora sencilla</h1>
+      <p>Introduce dos numeros y elige la operacion que quieres realizar.</p>
+
+      <div class="form-grid">
+        <label>
+          Primer numero
+          <input id="firstNumber" type="number" step="any" placeholder="0">
+        </label>
+        <label>
+          Segundo numero
+          <input id="secondNumber" type="number" step="any" placeholder="0">
+        </label>
+      </div>
+
+      <div class="button-group" aria-label="Operaciones">
+        <button class="button" data-operation="add">Sumar</button>
+        <button class="button" data-operation="subtract">Restar</button>
+        <button class="button" data-operation="multiply">Multiplicar</button>
+        <button class="button" data-operation="divide">Dividir</button>
+      </div>
+
+      <p class="result" id="calculatorResult">Resultado: -</p>
+      <p class="message message--error" id="calculatorError" aria-live="polite"></p>
+    </section>
+  </main>
+</body>
+</html>

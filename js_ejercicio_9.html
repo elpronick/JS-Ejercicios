@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 9 - Tareas con localStorage</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/js_ejercicio_9.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <a class="back-link" href="index.html">Volver al indice</a>
+
+    <section class="card">
+      <p class="eyebrow">Ejercicio 9</p>
+      <h1>Lista de tareas con localStorage</h1>
+      <p>Agrega tareas, marcalas como completadas y conserva los datos en el navegador.</p>
+
+      <div class="form-row">
+        <label class="sr-only" for="taskInput">Nueva tarea</label>
+        <input id="taskInput" type="text" placeholder="Ejemplo: Repasar localStorage">
+        <button class="button" id="addTaskButton">Agregar tarea</button>
+      </div>
+
+      <p class="message" id="taskMessage" aria-live="polite"></p>
+      <ul class="item-list" id="taskList"></ul>
+
+      <button class="button button--danger" id="deleteCompletedButton">Eliminar completadas</button>
+    </section>
+  </main>
+</body>
+</html>

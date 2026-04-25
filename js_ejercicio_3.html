@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3 - Lista dinamica</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/js_ejercicio_3.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <a class="back-link" href="index.html">Volver al indice</a>
+
+    <section class="card">
+      <p class="eyebrow">Ejercicio 3</p>
+      <h1>Lista dinamica</h1>
+      <p>Escribe un elemento, agregalo a la lista y eliminalo cuando quieras.</p>
+
+      <div class="form-row">
+        <label class="sr-only" for="itemInput">Nuevo elemento</label>
+        <input id="itemInput" type="text" placeholder="Ejemplo: Aprender eventos">
+        <button class="button" id="addItemButton">Agregar</button>
+      </div>
+
+      <p class="message" id="listMessage" aria-live="polite"></p>
+      <ul class="item-list" id="dynamicList"></ul>
+    </section>
+  </main>
+</body>
+</html>

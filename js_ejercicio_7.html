@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 7 - Generador de contrasenas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/js_ejercicio_7.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <a class="back-link" href="index.html">Volver al indice</a>
+
+    <section class="card">
+      <p class="eyebrow">Ejercicio 7</p>
+      <h1>Generador de contrasenas</h1>
+      <p>Genera una contrasena con letras, numeros y simbolos.</p>
+
+      <label for="passwordLength">Longitud minima: 4</label>
+      <input id="passwordLength" type="number" min="4" value="12">
+
+      <button class="button" id="generatePasswordButton">Generar</button>
+
+      <p class="result result--break" id="passwordResult">Contrasena: -</p>
+      <p class="message message--error" id="passwordError" aria-live="polite"></p>
+    </section>
+  </main>
+</body>
+</html>
