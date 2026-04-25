@@ -54,3 +54,4 @@ Si quieres recompilar el SCSS manualmente y tienes Sass instalado:
 ```bash
 sass scss/style.scss css/style.css
 ```
+# JS-Ejercicios
