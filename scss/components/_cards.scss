@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+
+.hero,
+.card {
+  border: 1px solid $border;
+  border-radius: 1.4rem;
+  padding: clamp(1.25rem, 4vw, 2.25rem);
+  background: $surface;
+  box-shadow: $shadow;
+}
+
+.hero {
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, 0.14), rgba(20, 184, 166, 0.12)),
+    $surface;
+}

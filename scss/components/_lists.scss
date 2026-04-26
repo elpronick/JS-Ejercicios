@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as *;
+
+.item-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  border: 1px solid $border;
+  border-radius: 0.9rem;
+  padding: 0.85rem 1rem;
+  background: $surface-soft;
+}
+
+.item-list label {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  width: 100%;
+  font-weight: 700;
+}
+
+.item-list input[type="checkbox"] {
+  width: auto;
+}
+
+.item-list .is-completed span {
+  color: $muted;
+  text-decoration: line-through;
+}

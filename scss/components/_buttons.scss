@@ -1,0 +1,54 @@
+@use "../abstracts/variables" as *;
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.button {
+  border: 0;
+  border-radius: 0.8rem;
+  padding: 0.85rem 1rem;
+  font: inherit;
+  font-weight: 800;
+  color: #ffffff;
+  background: $primary;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background: $primary-dark;
+  transform: translateY(-1px);
+}
+
+.button--secondary {
+  color: $text;
+  background: #e2e8f0;
+}
+
+.button--secondary:hover {
+  background: #cbd5e1;
+}
+
+.button--danger {
+  background: $danger;
+}
+
+.button--danger:hover {
+  background: $danger-dark;
+}
+
+.button--small {
+  padding: 0.5rem 0.7rem;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  .button,
+  .button-group .button {
+    width: 100%;
+  }
+}

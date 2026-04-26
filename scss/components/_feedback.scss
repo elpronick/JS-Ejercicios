@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as *;
+
+.result,
+.message,
+.timer {
+  margin-top: 1rem;
+  border-radius: 0.9rem;
+  padding: 1rem;
+  background: #eef4ff;
+}
+
+.result {
+  color: $text;
+  font-weight: 800;
+}
+
+.result--break {
+  overflow-wrap: anywhere;
+}
+
+.message {
+  min-height: 3.25rem;
+  color: $muted;
+}
+
+.message--error {
+  color: $danger;
+  background: #fff1f2;
+}
+
+.timer {
+  color: $text;
+  font-size: clamp(2.5rem, 10vw, 5rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-align: center;
+}

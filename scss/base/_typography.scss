@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as *;
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0.8rem;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  color: $muted;
+  line-height: 1.7;
+}
+
+.eyebrow {
+  margin: 0 0 0.4rem;
+  color: $primary;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}

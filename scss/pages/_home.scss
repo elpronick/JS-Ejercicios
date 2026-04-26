@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as *;
+
+.page--home {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.exercise-link {
+  display: grid;
+  gap: 0.35rem;
+  min-height: 110px;
+  border: 1px solid $border;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: $muted;
+  text-decoration: none;
+  background: $surface-soft;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exercise-link span {
+  color: $text;
+  font-weight: 800;
+}
+
+.exercise-link:hover {
+  transform: translateY(-3px);
+  border-color: $primary;
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.15);
+}

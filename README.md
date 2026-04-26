@@ -20,6 +20,23 @@ manipulacion del DOM, eventos y `localStorage`.
 |-- css/
 |   `-- style.css
 |-- scss/
+|   |-- abstracts/
+|   |   `-- _variables.scss
+|   |-- base/
+|   |   |-- _elements.scss
+|   |   |-- _reset.scss
+|   |   `-- _typography.scss
+|   |-- components/
+|   |   |-- _buttons.scss
+|   |   |-- _cards.scss
+|   |   |-- _feedback.scss
+|   |   |-- _forms.scss
+|   |   |-- _links.scss
+|   |   `-- _lists.scss
+|   |-- layout/
+|   |   `-- _page.scss
+|   |-- pages/
+|   |   `-- _home.scss
 |   `-- style.scss
 `-- js/
     |-- js_ejercicio_1.js
